@@ -1,0 +1,24 @@
+{
+  "name": "guillaumequenneville.github.io",
+  "version": "0.0.1",
+  "description": "My Websites",
+  "main": "index.js",
+  "scripts": {
+    "dev:css": "sass --watch style.scss css/style.css",
+    "dev:tailwind": "npx tailwindcss -i ./tailwind.css -o ./css/tailwind.css --watch",
+    "dev": "concurrently \"npm:dev:*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeQuenneville/guillaumequenneville.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuillaumeQuenneville/guillaumequenneville.github.io/issues"
+  },
+  "homepage": "https://github.com/GuillaumeQuenneville/guillaumequenneville.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
+  }
+}
