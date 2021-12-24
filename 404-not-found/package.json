@@ -1,0 +1,13 @@
+{
+  "name": "404-not-found",
+  "version": "1.0.0",
+  "description": "<!-- Please update value in the {}  -->",
+  "main": "404.html",
+  "scripts": {
+    "dev:tailwind": "npx tailwindcss -i ./tailwind.css -o ./css/tailwind.css --watch",
+    "dev:css": "sass --watch style.scss css/style.css",
+    "dev": "npm-run-all --parallel dev:tailwind dev:css"
+  },
+  "author": "",
+  "license": "ISC"
+}
