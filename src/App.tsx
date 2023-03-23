@@ -1,25 +1,26 @@
 import * as React from "react";
 import { Routes, Route, Outlet, Link, Navigate } from "react-router-dom";
+import Three from "./pages/Three";
 
 function App() {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Three />} />
           <Route path="about" element={<About />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="404" element={<NoMatch />} />
           <Route path="*" element={<Navigate replace to="/404" />} />
         </Route>
       </Routes>
-    </div>
+    </>
   );
 }
 
 function Layout() {
   return (
-    <div className="min-h-screen">
+    <div className="h-screen">
       <div className="bg-gray-800 text-white">
         <div className="mx-auto max-w-7xl">
           <nav className="flex h-16 items-center justify-between">
